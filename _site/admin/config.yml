@@ -1,0 +1,33 @@
+# backend:
+#   name: github
+#   repo: YasminKhawaja/next-site
+#   branch: main
+#   auth_endpoint: https://next-site-black.vercel.app/api/auth
+
+# media_folder: "images"
+
+# collections:
+#   - name: "pages"
+#     label: "Pages"
+#     folder: "pages"
+#     create: true
+#     slug: "{{slug}}"
+#     fields:
+#       - { label: "Title", name: "title", widget: "string" }
+#       - { label: "Content", name: "body", widget: "markdown" }
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }

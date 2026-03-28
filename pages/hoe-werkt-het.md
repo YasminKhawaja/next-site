@@ -1,5 +1,4 @@
 ---
-title: "Hoe werkt het?"
+title: Hoe werkt het?
+layout: layout.njk
 ---
-
-Welkom op de nieuwe site!

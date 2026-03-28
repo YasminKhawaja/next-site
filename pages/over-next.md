@@ -1,5 +1,4 @@
 ---
-title: "Over Next"
+title: Over NEXT
+layout: layout.njk
 ---
-
-Welkom op de nieuwe site!
