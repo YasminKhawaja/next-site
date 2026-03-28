@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -26,5 +26,50 @@
         },
       });
     </script>
+  </body>
+</html> -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <base href="/admin/" />
+
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
+
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+
+  <body>
+    <script>
+      CMS.init();
+
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+
+    <!-- <script>
+      CMS.init({
+        config: {
+          backend: {
+            name: "github",
+            repo: "YasminKhawaja/test-site",
+            branch: "main",
+            clientId: "Ov23li1n0ypqYhc1guPy",
+          },
+          site_url: "https://test-site-three-ebon.vercel.app",
+        },
+      });
+    </script> -->
   </body>
 </html>
