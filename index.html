@@ -7,7 +7,7 @@
 
   <body>
     <script>
-      fetch("/index.md")
+      fetch("pages/index.md")
         .then((res) => res.text())
         .then((text) => {
           const content = text.split("---")[2];
