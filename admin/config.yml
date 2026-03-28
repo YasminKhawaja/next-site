@@ -2,7 +2,7 @@ backend:
   name: github
   repo: YasminKhawaja/next-site
   branch: main
-  auth_endpoint: https://next-site-black.vercel.app/
+  auth_endpoint: https://next-site-black.vercel.app/api/auth
 
 media_folder: "images"
 
